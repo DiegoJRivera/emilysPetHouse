@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- 
+    Assignment Part C: Completed Website and Testing - Emily's Pet House Website.
+    Author: Diego Rivera
+    Date: 26/11/2016
+  -->
+	<title>About - Emily's Pet House</title>
+	<meta name ="keywords" content="pet shop, pets, grooming salon, dog grooming, dog trainig, cats, dogs, small pets, about" />
+	<link rel="stylesheet" href="../css/menuStyle.css" type="text/css" />
+	<link rel="stylesheet" href="../css/fonts.css" type="text/css" />
+	<link rel="stylesheet" href="../css/pagesMenu.css" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.css" />
+
+	<!-- script, link for Drop-down menu responsive -->
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="../js/menu.js"></script>
+
+	<style>
+
+		.about {
+			width: 45%;
+			float: right;
+			background-color: #A3D39C;
+			color: white;
+		}
+
+		.about p {
+			padding-left: 5px;
+		}
+
+		.about h3 {
+			padding-left: 5px;
+		}
+		
+		#container {
+		  width: 1200px;
+		  margin: 0 auto;
+		  border-width: 1px;
+		  padding-top: 10px;
+		}
+
+	</style>
+	
+</head>
+
+<body>
+
+<header>
+
+<p class="logo"><img src="../images/Emily's-black-2x.png" alt="Emily's Pet House Logo" width="150" height="100"/></p>
+
+	<!-- social media icons/fontAwesome -->
+		<div class="headerIcons">
+			<a href="http://www.twitter.com" title="Twitter Account" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+			<a href="http://www.instagram.com" title="Instagram Account" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+			<a href="http://www.youtube.com" title="YouTube Account" target="_blank"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+			<a href="http://www.facebook.com" title="Facebook Account" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+		</div>
+ <!--_______________________________________________ responsive dropdown menu ________________________________________________________________________________-->
+		<div class="menu_bar">
+			<a href="#" class="bt-menu"><span class="icon-menu"></span>Menu</a>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="../index.html"><span class="icon-home"></span>Home</a></li>
+				<li><a href="#"><span class="icon-info"></span>About</a></li>
+				<li><a href="ourTeam.html"><span class="icon-users"></span>Our Team</a></li>
+				<li class="submenu">
+					<a href="#"><span class="icon-cogs"></span>Services<span class="caret fa fa-angle-down" aria-hidden="true"></span></a>
+					<ul class="children">
+						<li><a href="services/groomingSalon.html">Grooming Salon<span class="fa fa-circle" aria-hidden="true" style="font-size:xx-small;"></span></a></li>
+						<li><a href="services/training.html">Training<span class="fa fa-circle" aria-hidden="true" style="font-size:xx-small;"></span></a></li>
+						<li><a>Shop<span class="fa fa-angle-down" aria-hidden="true" style="font-size:xx-small;"></span></a>
+						<li><a href="services/shop/foodAndHealth/dog.html">&nbsp;&nbsp;&nbsp;Food &amp; Health<span class="fa fa-circle" aria-hidden="true" style="font-size:xx-small;"></span></a></li>
+						<li><a href="services/shop/suppliesAndTraining/dog.html">&nbsp;&nbsp;&nbsp;Supplies &amp; Training<span class="fa fa-circle" aria-hidden="true" style="font-size:xx-small;"></span></a></li>
+					</ul>
+				</li>
+				<li><a href="appointment.html"><span class="icon-calendar"></span>Appointment</a></li>
+				<li><a href="testimonial.html"><span class="icon-bubbles4"></span>Testimonial</a></li>
+				<li><a href="contact.html"><span class="icon-envelop"></span>Contact</a></li>
+			</ul>
+		</nav>
+</header>
+
+<section id="container">
+	<div class="about">
+		<h3 style="color:#35404F;">About Us:</h3>
+		<br />
+	    <p>Emily's Pet House was born to meet the needs of both people and pets. Our services are focused on those who consider their pets as a member of their family, those who understand and consistently live daily the responsibility of having a pet. That's why at Emily's Pet House we focus so much on the health, integrity and style of our animals.</p>
+	    <br />
+	    <p>We are interested in transmitting the love and respect for the animals and we see them as members of our families, that is why we are looking for the owners to be aware of their environment, the environment in which they act. Our services are oriented to all those who look for a place that allows the pets a correct interaction with the environment and the other way around.</p>
+	    <br />  
+	</div>
+
+	<div style="text-align:center;">	
+		<p><img src="../images/dog2.jpg" alt="dog" width="600" height="500"></p>
+	</div>
+</section>
+
+<footer>
+ 	<p>&copy;2016 Emily's Pet Shop. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

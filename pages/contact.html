@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- 
+    Assignment Part C: Completed Website and Testing - Emily's Pet House Website.
+    Author: Diego Rivera
+    Date: 26/11/2016
+  -->
+
+  <title>Contact Emily's Pet House</title>
+  <link rel="stylesheet" href="../css/menuStyle.css" type="text/css" />
+  <link rel="stylesheet" href="../css/fonts.css" type="text/css" />
+  <link rel="stylesheet" href="../css/pagesMenu.css" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome-4.7.0/css/font-awesome.css" />
+
+  <!-- script, link for Drop-down menu responsive -->
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="../js/menu.js"></script>
+
+  <!-- script, link for submit contact form -->
+  <script src="../js/formValidation.js"></script>
+
+  <style>
+
+    body {
+      font-family: "FontAwesome",open-sans, sans-serif;
+    }
+
+    footer {
+      clear: both;
+      text-align: center;
+      margin-top: 40px;
+      padding: 6px;
+     }
+      
+    .title{
+      font-size: 3em;
+    }
+
+    #contact {
+      width: 47%;
+      padding-top: 30px;
+      float: left;
+      clear: both;
+      text-align: center;
+    }
+
+    form {
+      font-family: "FontAwesome",open-sans, sans-serif;
+      margin-top: 1em;
+      padding: 1em;
+      font-size: 16px;
+      color: #35404F;
+    }
+
+    form p {
+      font-weight: bolder;
+    }
+
+    #formcontainer {
+      width: 47%;
+      float: right;
+      padding-right: 80px;
+    }
+
+    .labelfloatleft label {
+      width: 100px;
+      margin-right: 15px;
+      margin-bottom: 1px;
+      color: #35404F;
+      float: left;
+      text-align: left;
+    }
+
+    .labelfloatleft input {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .message select {
+      margin-bottom: 10px;
+    }
+
+    .check 
+
+    fieldset {
+      margin-bottom: 10px;
+      background-color: #B7B8BA;
+      display: block;
+    }
+
+    legend {
+      color: #E45F56;
+      padding: 0 10px;
+      font-weight: bolder;
+    }
+
+    label {
+      color: #35404F;
+    }
+
+    input.text {
+      background-color: #FFFFFF;
+    }
+
+    .group {
+      border: 0;
+      margin: 0;
+      padding: 0;
+    }
+
+    textarea {
+      display: block;
+    }
+
+    select {
+      display: block;
+    }
+
+    input.button {
+      color: #305704;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: bold;
+      padding: 4px;
+      background-color: #EEEDE9;
+      border: 1px solid #305704;
+      display: inline;
+    }
+
+    img.map {
+      border: double thick #35404F;
+      margin: 10px 0 10px 10px;
+    }
+
+    .footicon {
+      font-family: "FontAwesome",open-sans, sans-serif;
+      font-size: 90%;
+      padding: 10px 0 30px 0;
+      margin-left: 220px;
+      text-align: left;
+    }
+
+    .footicon nav ul {
+      list-style: none;
+      margin-left: -40px;
+    }
+
+    .footicon nav ul li span {
+      margin-right: 10px;
+    }
+
+    .footicon nav ul li {
+      color: #35404F;
+    }
+
+    .footicon nav ul li a { 
+      color: #35404F;
+      text-decoration: none;
+    }
+
+    .footicon nav ul li a:hover { 
+      color: #E45F56;
+    }
+
+    .footicon p {
+      padding-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .footicon nav ul li {
+      padding-bottom: 5px;
+    }
+
+    #btn {
+      margin-top: 5px;
+      margin-left: 2px;
+    }
+
+    #btn input:hover {
+      color: #FFFFFF;
+      background-color: #E45F56;
+    }
+
+  /* For Modal */
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      padding-top: 100px; /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+    /* Modal Content */
+    .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+    }
+
+    /* The Close Button */
+    .close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+  </style>
+
+</head>
+
+<body>
+<header>
+
+<p class="logo"><img src="../images/Emily's-black-2x.png" alt="Emily's Pet House Logo" width="150" height="100"/></p>
+
+  <!-- social media icons/fontAwesome -->
+    <div class="headerIcons">
+      <a href="http://www.twitter.com" title="Twitter Account" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+      <a href="http://www.instagram.com" title="Instagram Account" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      <a href="http://www.youtube.com" title="YouTube Account" target="_blank"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+      <a href="http://www.facebook.com" title="Facebook Account" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+    </div>
+ <!--_______________________________________________ responsive dropdown menu ________________________________________________________________________________-->
+    <div class="menu_bar">
+      <a href="#" class="bt-menu"><span class="icon-menu"></span>Menu</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="../index.html"><span class="icon-home"></span>Home</a></li>
+        <li><a href="about.html"><span class="icon-info"></span>About</a></li>
+        <li><a href="ourTeam.html"><span class="icon-users"></span>Our Team</a></li>
+        <li class="submenu">
+          <a href="#"><span class="icon-cogs"></span>Services<span class="caret fa fa-angle-down" aria-hidden="true"></span></a>
+          <ul class="children">
+            <li><a href="services/groomingSalon.html">Grooming Salon<span class="fa fa-circle" aria-hidden="true" style="font-size:xx-small;"></span></a></li>
+            <li><a href="services/training.html">Training<span class="fa fa-circle" aria-hidden="true" style="font-size:xx-small;"></span></a></li>
+            <li><a>Shop<span class="fa fa-angle-down" aria-hidden="true" style="font-size:xx-small;"></span></a>
+            <li><a href="services/shop/foodAndHealth/dog.html">&nbsp;&nbsp;&nbsp;Food &amp; Health<span class="fa fa-circle" aria-hidden="true" style="font-size:xx-small;"></span></a></li>
+            <li><a href="services/shop/suppliesAndTraining/dog.html">&nbsp;&nbsp;&nbsp;Supplies &amp; Training<span class="fa fa-circle" aria-hidden="true" style="font-size:xx-small;"></span></a></li>
+          </ul>
+        </li>
+        <li><a href="appointment.html"><span class="icon-calendar"></span>Appointment</a></li>
+        <li><a href="testimonial.html"><span class="icon-bubbles4"></span>Testimonial</a></li>
+        <li><a href="#"><span class="icon-envelop"></span>Contact</a></li>
+      </ul>
+    </nav>
+</header>
+
+<article id="contact">
+
+<h3 style="color:#35404F;">Find on Map</h3>
+<p><img src="../images/map.png" alt="temporal pictures" width="300" heigth="250" class="map"/></p>
+
+<div class="footicon">
+      <p>CONTACT DETAILS:</p>
+      <nav>
+        <ul>
+          <li><span class="icon-location"></span>12 Normanby Street, Windsor, VIC 3181. Melbourne.</li>
+          <li><span class="icon-clock"></span>Mon-Fri 8am-6pm. Sat 9am-12pm.</li>
+          <li><span class="icon-phone"></span>478896902</li>
+          <li><a href="mailto:contact@emilyspetshop.com" title="Emily's PetShop Email"><span class="icon-envelop"></span>contact@emilyspetshop.com</a></li>
+        </ul>
+      </nav>
+    </div>
+
+</article>
+
+<div id = "formcontainer">
+<form id="myForm">
+  <p style="padding-bottom: 5px;">Contact Us:</p>
+  <fieldset class="labelfloatleft"><legend>Contact Information</legend>
+    <label for="firstname">Name</label>
+    <input type="text" name="firstname" id="firstname" class="text" />
+
+    <label for="lastname">Last Name</label>
+    <input type="text" name="lastname" id="lastname" class="text" />
+
+    <label for="emailaddress">Email</label>
+    <input type="text" name="emailaddress" id="emailaddress" size="40" class="text" placeholder="name@anywhere.com" />
+    <p id="errorSubmit" align="center" style="color:red; font-size:65%;"></p>
+  </fieldset>
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal" onclick="hide()">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p id="confirm" style="text-align:center;"></p>
+    </div>
+  </div>
+  <!-- end Modal -->
+
+  <p style="padding-bottom: 5px;"></p>
+   <fieldset class="petinfo"><legend>Pet Information</legend>
+    <input type="radio" name="pet" id="dog" value="dog" checked="checked" />
+    <label for="dog">Dog</label>
+
+    <input type="radio" name="pet" id="cat" value="cat" />
+    <label for="cat">Cat</label>
+
+    <input type="radio" name="smallPet" id="smallPet" value="smallPet" />
+    <label for="smallPet">Small Pet</label>
+    </fieldset>
+
+  <p style="padding-bottom: 20px;"></p>
+  <fieldset><legend>I want to recieve information about: (check your interests)</legend>
+    
+    <fieldset class="group">
+      <input type="checkbox" name="interested" id="magazine" value="magazine" checked="checked" />
+      <label for="magazine">Grooming Magazine</label>
+    </fieldset>
+
+    <fieldset class="group">
+      <input type="checkbox" name="interested" id="tips" value="tips" />
+      <label for="tips">Training Tips</label>
+    </fieldset>
+
+    <fieldset class="group">
+      <input type="checkbox" name="interested" id="vet" value="vet" />
+      <label for="vet">Veterinary Clinic</label>
+    </fieldset>
+
+    <fieldset class="group">
+      <input type="checkbox" name="interested" id="contest" value="contest" />
+      <label for="contest">Local Pets Contest</label>
+    </fieldset>
+
+    <fieldset class="group">
+      <input type="checkbox" name="interested" id="newsletter" value="newsletter" />
+      <label for="newsletter">Emily's Pet House Newsletter</label>
+    </fieldset>
+
+  </fieldset>
+
+  <p style="padding-bottom: 20px;"></p>
+  <fieldset class="message"><legend>Send a Message</legend>
+    <label for="subject">Subject</label>
+    <select name="subject" id="subject">
+      <option value="grooming">Information about Grooming Salon</option>
+      <option value="Training">Information about Training</option>
+      <option value="Shop" selected="selectd">Sales Products</option>
+      <option value="other">Other</option>
+    </select>
+
+    <label for="message">Message</label>
+    <textarea name="message" id="message" rows = "10" cols = "70"></textarea>
+  </fieldset>
+
+  <p style="padding-bottom: 20px;"></p>
+  <div id="btn">
+    <input type"button" value="Submit" class="button" onclick="doSubmit()"/>
+    <input type"button" value="Start Again" class="button" onclick="doAgain()"/>
+  </div>
+</form>
+
+</div>
+<footer>
+  <p><span class="fa fa-copyright" style="font-family:'FontAwesome',open-sans, sans-serif;">2016 Emily's Pet Shop. All rights reserved.</span></p>
+</footer> 
+
+</body>
+</html>

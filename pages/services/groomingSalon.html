@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- 
+    Assignment Part C: Completed Website and Testing - Emily's Pet House Website.
+    Author: Diego Rivera
+    Date: 26/11/2016
+  -->
+
+  <title>Grooming Salon Emily's Pet House</title>
+  <meta keywords="pet shop, pets, grooming salon, dog grooming, dog trainig, cats, dogs, small pets, shop, grooming, salon" />
+  <link rel="stylesheet" href="../../css/menuStyle.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/fonts.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/pagesMenu.css" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="../../css/font-awesome-4.7.0/css/font-awesome.css" />
+
+  <!-- script, link for Drop-down menu responsive -->
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="../../js/menu.js"></script>
+
+  <style>
+
+    body {
+      background-color: #EEEDE9;
+      font-family: "FontAwesome",open-sans, sans-serif;
+    }
+
+    footer {
+      clear: both;
+      text-align: center;
+      margin-top: 20px;
+      padding: 6px;
+     }
+     
+    .logo img {
+      vertical-align: middle;
+      float: left;
+    }
+      
+    .title{
+      font-size: 3em;
+    }
+
+    #container {
+      width: 900px;
+      margin: 0 auto;
+      border-width: 1px;
+    }
+
+    table {
+        width: 100%;
+        margin: 10px auto;
+        border: solid 3px #35404F;
+        border-collapse: collapse;
+        background-color: #A3D39C;
+      }
+
+      caption {
+        padding: 4px;
+        color: white;
+        background-color: #35404F;
+        font-weight: lighter;
+        font-style: italic;
+        font-size: 1.2em;
+      }
+
+      td {
+        padding: 6px;
+      }
+
+      tr.stripe {
+        background-color: #4AAAA5;
+        font-weight: lighter;
+        text-align: left;
+      }
+
+      tr:hover {
+        color: white;
+        background-color: #E45F56;
+      }
+
+      .activities {
+        background-color: #A3D39C;
+      }
+
+      .center {
+      font-style: italic;
+      text-align: center;
+    }
+
+    .main {
+      width:90%;
+      max-width:1000px;
+      margin:20px auto;
+      padding-bottom: 100px;
+      padding-top: 90px;
+    }
+     
+    .photo {
+      width:100%;
+      text-align: center;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<header>
+
+<p class="logo"><img src="../../images/Emily's-black-2x.png" alt="Emily's Pet House Logo" width="150" height="100"/></p>
+
+  <!-- social media icons/fontAwesome -->
+    <div class="headerIcons">
+      <a href="http://www.twitter.com" title="Twitter Account" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+      <a href="http://www.instagram.com" title="Instagram Account" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      <a href="http://www.youtube.com" title="YouTube Account" target="_blank"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+      <a href="http://www.facebook.com" title="Facebook Account" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+    </div>
+ <!--_______________________________________________ responsive dropdown menu ________________________________________________________________________________-->
+    <div class="menu_bar">
+      <a href="#" class="bt-menu"><span class="icon-menu"></span>Menu</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="../../index.html"><span class="icon-home"></span>Home</a></li>
+        <li><a href="../about.html"><span class="icon-info"></span>About</a></li>
+        <li><a href="../ourTeam.html"><span class="icon-users"></span>Our Team</a></li>
+        <li class="submenu">
+          <a href="#"><span class="icon-cogs"></span>Services<span class="caret fa fa-angle-down" aria-hidden="true"></span></a>
+          <ul class="children">
+            <li><a href="#">Grooming Salon<span class="fa fa-circle" aria-hidden="true" style="font-size:xx-small;"></span></a></li>
+            <li><a href="training.html">Training<span class="fa fa-circle" aria-hidden="true" style="font-size:xx-small;"></span></a></li>
+            <li><a>Shop<span class="fa fa-angle-down" aria-hidden="true" style="font-size:xx-small;"></span></a>
+            <li><a href="shop/foodAndHealth/dog.html">&nbsp;&nbsp;&nbsp;Food &amp; Health<span class="fa fa-circle" aria-hidden="true" style="font-size:xx-small;"></span></a></li>
+            <li><a href="shop/suppliesAndTraining/dog.html">&nbsp;&nbsp;&nbsp;Supplies &amp; Training<span class="fa fa-circle" aria-hidden="true" style="font-size:xx-small;"></span></a></li>
+          </ul>
+        </li>
+        <li><a href="../appointment.html"><span class="icon-calendar"></span>Appointment</a></li>
+        <li><a href="../testimonial.html"><span class="icon-bubbles4"></span>Testimonial</a></li>
+        <li><a href="../contact.html"><span class="icon-envelop"></span>Contact</a></li>
+      </ul>
+    </nav>
+</header>
+
+<section id="container">
+  <table title="Optional Services Grooming Salon - Emily's Pet House">
+      <caption>Optional Services</caption>
+      
+      <colgroup>
+        <col class="activities" />
+        <col />
+        <col />
+        <col />
+        <col />
+        <col />
+      </colgroup>
+
+      <tr class="stripe">
+        <th>Service</th>
+        <th>Price</th>
+      </tr>
+      <tr>
+        <td>Express Grooming</td>
+        <td>$10.00</td>
+      </tr>
+      <tr>
+        <td>Flea Treatment from</td>
+        <td>$5.00</td>
+      </tr>
+      <tr>
+        <td>Anal Glands</td>
+        <td>$5.00</td>
+      </tr>
+      <tr>
+        <td>Shed Less Program from</td>
+        <td>5.00</td>
+      </tr>
+      <tr>
+        <td>Pet Cologne</td>
+        <td>Free</td>
+      </tr>
+      <tr>
+        <td>Treatment Shampoo</td>
+        <td>$3.00</td>
+      </tr>
+      <tr>
+        <td>Treatment Conditioner</td>
+        <td>$3.00</td>
+      </tr>
+      <tr>
+        <td>Aromatherapy Rinse</td>
+        <td>$3.00</td>
+      </tr>
+      <tr>
+        <td>Pet Bows</td>
+        <td>Free</td>
+      </tr>
+    </table>
+
+    <table title="Other Dog Grooming Services Grooming Salon - Emily's Pet House">
+      <caption>Other Dog Grooming Services</caption>
+      
+      <colgroup>
+        <col class="activities" />
+        <col />
+        <col />
+        <col />
+        <col />
+      </colgroup>
+
+      <tr class="stripe">
+        <th>Service Type</th>
+        <th>Small</th>
+        <th>Medium</th>
+        <th>Large</th>
+      </tr>
+      <tr>
+        <td>Nail Trimming</td>
+        <td>$6.00</td>
+        <td>$10.00</td>
+        <td>$12.00</td>
+      </tr>
+      <tr>
+        <td>Nail Trimming and Filing</td>
+        <td>$8.50</td>
+        <td>$12.50</td>
+        <td>$15.50</td>
+      </tr>
+      <tr>
+        <td>Nail Trimming, Face &amp; Feet Tidy Up</td>
+        <td>$15.50</td>
+        <td>$22.00</td>
+        <td>$33.00</td>
+      </tr>
+      <tr>
+        <td>Worming Treatment</td>
+        <td colspan="3" class="center">from 7.00</td>
+      </tr>
+    </table>
+  <h3>*Dogs are groomed at $66.00 per hour, with a minimum charge of $40.</h3>
+  <h3>*10% Discount for regular customers!!!</h3>
+</section>
+
+<div class="main">
+    <div class="photo">
+      <h2>We will wait for you...</h2>
+      <img src="../../images/dog4.jpg" alt="dog" width="750" heigth="600">
+    </div>
+</div>
+
+</div>
+<footer>
+  <p><span class="fa fa-copyright" style="font-family:'FontAwesome',open-sans, sans-serif;">2016 Emily's Pet Shop. All rights reserved.</span></p>
+</footer> 
+
+</body>
+</html>
