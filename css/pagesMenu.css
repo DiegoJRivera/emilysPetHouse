@@ -1,0 +1,36 @@
+header {
+		width: 100%;
+		height: 80%;
+		background-color: #74CCC8;
+	}
+
+	body {
+		background-color: #EEEDE9;
+	}
+
+	.headerIcons {
+		float: right;
+		font-size: x-large;
+		padding: 5px 30px 0 0;
+		margin: -57.5px 10px 10px 20px;
+	}
+
+	.headerIcons a {
+		text-decoration: none;
+		color: #35404F;
+	}
+
+
+	.logo img {
+		float: left;
+	    margin: -70.5px 10px 10px 20px
+	}
+
+	.logo {
+		padding: 90px 0 0 0;
+	}
+
+	footer {
+		text-align: center;
+		padding-top: 70px;
+	}

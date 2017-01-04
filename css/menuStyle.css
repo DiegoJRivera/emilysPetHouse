@@ -1,0 +1,184 @@
+* {
+	padding:0;
+	margin:0;
+}
+ 
+body {
+	font-family: open-sans, sans-serif;
+	font-size: small;
+	background:#FEFEFE;
+}
+ 
+.menu_bar {
+	display:none;
+}
+ 
+header {
+	width: 100%;
+}
+ 
+header nav {
+	background:#023859;
+	z-index:1000;		/* So that the menu is above the other elements */
+	max-width: 2000px;
+	width:95%;
+	margin:20px auto;
+}
+ 
+header nav ul {
+	list-style:none;
+}
+ 
+header nav ul li {
+	display:inline-block;
+	position: relative;
+}
+ 
+header nav ul li:hover {
+	background:#E45F56;
+}
+
+header nav ul li a {
+	color:#fff;
+	display:block;
+	text-decoration:none;
+	padding: 10px;
+}
+
+header nav ul li a span {
+	margin-right:5px;
+}
+ 
+header nav ul li:hover .children {
+	display:block;
+}
+
+header nav ul li .children {
+	display: none;
+	background:#011826;
+	position: absolute;
+	width: 150%;
+	z-index:2000;
+}
+
+header nav ul li .children li {
+	display:block;
+	overflow: hidden;
+	border-bottom: 1px solid rgba(255,255,255,.5);
+}
+
+header nav ul li .children li a {
+	display: block;
+}
+
+header nav ul li .children li a span {
+	float: right;
+	position: relative;
+	top:3px;
+	margin-right:0;
+	margin-left:5px;
+}
+
+header nav ul li .caret {
+	position: relative;
+	top:1px;
+	margin-left:10px;
+	margin-right:0px;
+}
+
+@media screen and (max-width: 800px) {   /* For responsive */
+body {
+	padding-top:100px;
+}
+
+#search{
+	display: none;
+}
+
+.footicon{
+	display: none;
+}
+
+.links{
+	display: none;
+}
+
+.links2{
+	display: none;
+}
+
+.logo{
+	display: none;
+}
+
+.rights{
+	float: left;
+}
+
+footer {
+	width: 100%;
+	margin-top: 10px;
+	padding: 1em auto;
+	border-top: solid 2px black;
+	clear: both;
+	font-weight: bold;
+	background-color: #35404F;
+}
+ 
+.menu_bar {
+	display:block;
+	width:100%;
+	position: fixed;
+	top:0;
+	background:#74CCC8;
+}
+ 
+.menu_bar .bt-menu {
+	display: block;
+	padding: 30px;
+	color: #fff;
+	overflow: hidden;
+	font-size: 25px;
+	font-weight: bold;
+	text-decoration: none;
+}
+ 
+.menu_bar span {
+	float: right;
+	font-size: 40px;
+}
+ 
+header nav {
+	width: 60%;
+	height: calc(100% - 80px);
+	position: fixed;
+	right:100%;
+	margin: 0;
+	overflow: scroll;
+}
+ 
+header nav ul li {
+	display: block;
+	border-bottom:1px solid rgba(255,255,255,.5);
+}
+ 
+header nav ul li a {
+	display: block;
+}
+ 
+header nav ul li:hover .children {
+	display: none;
+}
+ 
+header nav ul li .children {
+	width: 100%;
+	position: relative;
+}
+ 
+header nav ul li .children li a {
+	margin-left:20px;
+}
+ 
+header nav ul li .caret {
+	float: right;
+}		
