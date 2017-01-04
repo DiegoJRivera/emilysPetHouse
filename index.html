@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- 
+    Assignment Part C: Completed Website and Testing - Emily's Pet House Website.
+    Author: Diego Rivera
+    Date: 26/11/2016
+  -->
+	<title>Emily's Pet House</title>
+	<meta name ="keywords" content="pet shop, pets, grooming salon, dog grooming, dog trainig, cats, dogs, small pets" />
+
+	<!-- code for responsive view of the menu -->
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="css/font-awesome-4.7.0/css/font-awesome.css" /> <!-- for icons -->
+	<link rel="stylesheet" href="css/fonts.css" type="text/css" /> <!-- style sheet for link and menu -->
+	<link rel="stylesheet" href="css/menuStyle.css" type="text/css" />
+	<link rel="stylesheet" href="css/slidesStyle.css" type="text/css" />
+	
+	<!-- script, link for Drop-down menu responsive -->
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="js/menu.js"></script>
+	
+	<script>
+		//scripte images slides
+	    $(function(){
+	  $(".slides").slidesjs({
+	    play: {
+	      active: true,
+	        // [boolean] Generate the play and stop buttons.
+	        // You cannot use your own buttons. Sorry.
+	      effect: "slide",
+	        // [string] Can be either "slide" or "fade".
+	      interval: 4000,
+	        // [number] Time spent on each slide in milliseconds.
+	      auto: true,
+	        // [boolean] Start playing the slideshow on load.
+	      swap: true,
+	        // [boolean] show/hide stop and play buttons
+	      pauseOnHover: false,
+	        // [boolean] pause a playing slideshow on hover
+	      restartDelay: 2500
+	        // [number] restart delay on inactive slideshow
+	    }
+	  });
+	});
+	//scripte images slides
+  </script>
+
+	<style type = "text/css"> /* Embedded styles */
+		
+		*	{
+			margin:0px;
+			padding:0px;
+		}
+
+		/* para utilizar &#x... en iconos awesome fonts...primeros descargados para redes sociales*/
+		@font-face {
+		  	font-family: "FontAwesome";
+		  	src: url("css/font-awesome-4.7.0/fonts/fontawesome-webfont.woff"); 
+		}
+
+		/*configuracion de header acorde a menu*/
+		header {
+			width: 100%;
+			height: 80%;
+			background-color: #74CCC8;
+		}
+
+		body {
+			background-color: #EEEDE9;
+		}
+
+		.headerIcons {
+			float: right;
+			font-size: x-large;
+			padding: 5px 30px 0 0;
+			margin: -57.5px 10px 10px 20px;
+		}
+
+
+		.headerIcons a {
+			text-decoration: none;
+			color: #35404F;
+		}
+
+		.logo img {
+			float: left;
+	    	margin: -70.5px 10px 10px 20px
+		}
+
+		.logo {
+			padding: 90px 0 0 0;
+		}
+
+/*_______________________________________________ Icons Services __________________________________________________________*/
+		.serviceIcons {
+			width: 100%;
+		}
+ 
+		.serviceIcons nav {
+			z-index:2000;		/* So that the menu is above the other elements */
+			max-width:1000px;
+			width:95%;
+			margin:20px auto;
+			padding-bottom: 100px;
+			text-align: center;
+		}
+		 
+		.serviceIcons nav ul {
+			list-style:none;
+		}
+		 
+		.serviceIcons nav ul li {
+			display:inline-block;
+			position: relative;
+		}
+		 
+		.serviceIcons nav ul li:hover {
+			background:#EEEDE9;
+		}
+
+		.serviceIcons nav ul li a {
+			color:#35404F;
+			display:block;
+			text-decoration:none;
+			padding: 10px;
+		}
+
+		.serviceIcons nav ul li a span {
+			margin-right:150px;
+			margin-top: 10px;
+			font-size: 800%;
+		}
+		 
+		.serviceIcons nav ul li:hover .child {
+			display:block;
+		}
+
+		.serviceIcons nav ul li .child {
+			display: none;
+			background:#74CCC8;
+			position: absolute;
+			width: 60%;
+			z-index:2000;
+			font-size: 80%;
+			text-align: left;
+		}
+
+		.serviceIcons nav ul li .child li {
+			display:block;
+			overflow: hidden;
+			border-bottom: 1px solid rgba(255,255,255,.5);
+		}
+
+		.serviceIcons nav ul li .child li a {
+			display: block;
+		}
+
+		.serviceIcons nav ul li .child li a span {
+			float: right;
+			position: relative;
+			top: -8px;
+			margin-right:0;
+			margin-left:5px;
+		}
+
+		.serviceIcons nav ul li .caret {
+			position: relative;
+			top:1px;
+			margin-left:10px;
+			margin-right:0px;
+		}
+/*_______________________________________________ end Icons Services __________________________________________________________*/
+
+		footer {
+			width: 100%;
+			margin-top: 10px;
+			padding: 1em auto;
+			border-top: solid 2px black;
+			clear: both;
+			font-weight: bold;
+			background-color: #35404F;
+		}
+
+		.logo2 img {
+			float: left;
+	    	margin-left: 60px;
+		}
+
+		.logo2 {
+			padding: 10px 0 0 0;
+		}
+
+		.footicon {
+			font-family: "FontAwesome",open-sans, sans-serif;
+			font-size: 90%;
+			padding: 10px 0 30px 0;
+			margin-left: 250px;
+			text-align: left;
+		}
+
+		.footicon nav ul {
+			list-style: none;
+		}
+
+		.footicon nav ul li a span {
+			margin-right: 5px;
+		}
+
+		.footicon nav ul li a {	
+			color: #fff;
+			text-decoration: none;
+			font-weight: lighter;
+		}
+
+		.footicon nav ul li a:hover {	
+			color: #E45F56;
+		}
+
+		.footicon p {
+		padding-bottom: 10px;
+		color: #fff;
+		font-weight: bold;
+		}
+
+		.footicon nav ul li {
+			padding-bottom: 5px;
+		}
+
+		.links {
+			font-family: "FontAwesome",open-sans, sans-serif;
+			font-size: 90%;
+			padding: 10px 0 30px 0;
+			margin-left: 50px;
+			margin-right: 500px;
+			margin-top: -160px;
+			float: right;
+			text-align: left;
+		}
+
+		.links nav ul {
+			list-style: none;
+		}
+
+		.links nav ul li a {	
+			color: #fff;
+			text-decoration: none;
+			font-weight: lighter;
+		}
+
+		.links nav ul li a:hover {	
+			color: #E45F56;
+		}
+
+		.links p {
+			padding-bottom: 10px;
+			color: #fff;
+			font-weight: bold;
+		}
+
+		.links nav ul li {
+			padding-bottom: 5px;
+		}
+
+		.links2 {
+			font-family: "FontAwesome",open-sans, sans-serif;
+			font-size: 90%;
+			padding: 10px 0 30px 0;
+			margin-top: -160px;
+			float: right;
+			text-align: left;
+		}
+
+		.links2 nav ul {
+			list-style: none;
+		}
+
+		.links2 nav ul li a {	
+			color: #fff;
+			text-decoration: none;
+			font-weight: lighter;
+		}
+
+		.links2 nav ul li a:hover {	
+			color: #E45F56;
+		}
+
+		.links2 p {
+			padding-bottom: 10px;
+			color: #fff;
+			font-weight: bold;
+		}
+
+		.links2 nav ul li {
+			padding-bottom: 5px;
+		}
+
+		.rights {
+			font-family: "FontAwesome",open-sans, sans-serif;
+			color: #fff;
+			font-weight: bold;
+			margin-left: 420px;
+			text-align: center;
+		}
+
+	</style>
+
+</head>
+
+<body>
+<div id="top">
+	<header>	
+		<p class="logo"><img src="images/Emily's-black-2x.png" alt="Emily's Pet House Logo" width="150" height="100"/></p>
+
+	<!-- social media icons/fontAwesome -->
+		<div class="headerIcons">
+			<a href="http://www.twitter.com" title="Twitter Account" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+			<a href="http://www.instagram.com" title="Instagram Account" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+			<a href="http://www.youtube.com" title="YouTube Account" target="_blank"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+			<a href="http://www.facebook.com" title="Facebook Account" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+		</div>
+
+ <!--_______________________________________________ responsive dropdown menu ________________________________________________________________________________-->
+		<div class="menu_bar">
+			<a href="#" class="bt-menu"><span class="icon-menu"></span>Menu</a>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="#"><span class="icon-home"></span>Home</a></li>
+				<li><a href="pages/about.html"><span class="icon-info"></span>About</a></li>
+				<li><a href="pages/ourTeam.html"><span class="icon-users"></span>Our Team</a></li>
+				<li class="submenu">
+					<a href="#"><span class="icon-cogs"></span>Services<span class="caret fa fa-angle-down" aria-hidden="true"></span></a>
+					<ul class="children">
+						<li><a href="pages/services/groomingSalon.html">Grooming Salon<span class="fa fa-circle" aria-hidden="true" style="font-size:xx-small;"></span></a></li>
+						<li><a href="pages/services/training.html">Training<span class="fa fa-circle" aria-hidden="true" style="font-size:xx-small;"></span></a></li>
+						<li><a>Shop<span class="fa fa-angle-down" aria-hidden="true" style="font-size:xx-small;"></span></a>
+						<li><a href="pages/services/shop/foodAndHealth/dog.html">&nbsp;&nbsp;&nbsp;Food &amp; Health<span class="fa fa-circle" aria-hidden="true" style="font-size:xx-small;"></span></a></li>
+						<li><a href="pages/services/shop/suppliesAndTraining/dog.html">&nbsp;&nbsp;&nbsp;Supplies &amp; Training<span class="fa fa-circle" aria-hidden="true" style="font-size:xx-small;"></span></a></li>
+					</ul>
+				</li>
+				<li><a href="pages/appointment.html"><span class="icon-calendar"></span>Appointment</a></li>
+				<li><a href="pages/testimonial.html"><span class="icon-bubbles4"></span>Testimonial</a></li>
+				<li><a href="pages/contact.html"><span class="icon-envelop"></span>Contact</a></li>
+			</ul>
+		</nav>
+
+	</header>
+</div>
+ <!--_______________________________________________ end responsive dropdown menu ________________________________________________________________________________-->
+
+ <!--_______________________________________________________ slides photo ________________________________________________________________________________________-->
+	<div class="main">
+		<div class="slides">
+			<img src="images/dog3.jpg" alt="dog1">
+			<img src="images/dog5.jpg" alt="dog2">
+			<img src="images/dog7.jpg" alt="dog3">
+		</div>
+	</div>
+
+	<!-- script, link for the images slides -->
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="js/jquery.slides.js"></script>
+ <!--_____________________________________________________  end slides photo _______________________________________________________________________________________-->
+	
+<!--_____________________________________________________  Services Icons _______________________________________________________________________________________-->
+	<div class="serviceIcons">
+		<nav>
+			<ul>
+				<li class="subm"><a><span class="fa fa-shopping-cart" aria-hidden="true"></span></a>
+					<ul class="child">
+						<li><a>Shop<span class="fa fa-angle-down" aria-hidden="true" style="font-size:xx-small;"></span></a></li>
+						<li><a>&nbsp;&nbsp;Food &amp; Health<span class="fa fa-paw" aria-hidden="true" style="font-size:xx-small;"></span></a></li>
+						<li><a href="pages/services/shop/foodAndHealth/dog.html">&nbsp;&nbsp;&nbsp;&nbsp;Dog<span class="fa fa-circle" aria-hidden="true" style="font-size:xx-small;"></span></a></li>
+						<li><a href="pages/services/shop/foodAndHealth/cat.html">&nbsp;&nbsp;&nbsp;&nbsp;Cat<span class="fa fa-circle" aria-hidden="true" style="font-size:xx-small;"></span></a></li>
+						<li><a href="pages/services/shop/foodAndHealth/smallPets.html">&nbsp;&nbsp;&nbsp;&nbsp;Small Pet<span class="fa fa-circle" aria-hidden="true" style="font-size:xx-small;"></span></a></li>
+						<li><a>&nbsp;&nbsp;Supplies &amp; Training<span class="fa fa-paw" aria-hidden="true" style="font-size:xx-small;"></span></a></li>
+						<li><a href="pages/services/shop/suppliesAndTraining/dog.html">&nbsp;&nbsp;&nbsp;&nbsp;Dog<span class="fa fa-circle" aria-hidden="true" style="font-size:xx-small;"></span></a></li>
+						<li><a href="pages/services/shop/suppliesAndTraining/cat.html">&nbsp;&nbsp;&nbsp;&nbsp;Cat<span class="fa fa-circle" aria-hidden="true" style="font-size:xx-small;"></span></a></li>
+						<li><a href="pages/services/shop/suppliesAndTraining/smallPets.html">&nbsp;&nbsp;&nbsp;&nbsp;Small Pet<span class="fa fa-circle" aria-hidden="true" style="font-size:xx-small;"></span></a></li>
+					</ul>
+				</li>
+				<li><a href="#"><span class="fa fa-scissors" aria-hidden="true"></span></a>
+					<ul class="child">
+						<li><a href="pages/services/groomingSalon.html">Grooming Salon<span class="fa fa-paw" aria-hidden="true" style="font-size:xx-small;"></span></a></li>
+					</ul>
+				</li>
+				<li><a href="#"><span class="fa fa-graduation-cap" aria-hidden="true"></span></a>
+					<ul class="child">
+						<li><a href="pages/services/training.html">Training<span class="fa fa-paw" aria-hidden="true" style="font-size:xx-small;"></span></a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</div>
+<!--_____________________________________________________  end Services Icons _____________________________________________________________________________________-->
+
+	<footer>
+		<p class="logo2"><a href="#top"><img src="images/Emily's-white-2x.png" alt="Emily's Pet House Logo" width="7%" height="5%"/></a></p>
+		<div class="footicon">
+			<p>CONTACT DETAILS:</p>
+			<nav>
+				<ul>
+					<li><a href="pages/contact.html"><span class="icon-location"></span>12 Normanby Street, Windsor, VIC 3181. Melbourne.</a></li>
+					<li><a href="pages/contact.html"><span class="icon-clock"></span>Mon-Fri 8am-6pm. Sat 9am-12pm.</a></li>
+					<li><a href="pages/contact.html"><span class="icon-phone"></span>478896902</a></li>
+					<li><a href="mailto:contact@emilyspetshop.com" title="Emily's PetShop Email"><span class="icon-envelop"></span>contact@emilyspetshop.com</a></li>
+					<li><a href="pages/appointment.html"><span class="fa fa-calendar" aria-hidden="true"></span>Appointment</a></li>
+				</ul>
+			</nav>
+ 		</div>
+
+ 		<div class="links">
+ 			<p>USEFUL LINKS:</p>
+ 			<nav>
+ 				<ul>
+					<li><a href="pages/services/shop/foodAndHealth/dog.html">Food &amp; Health Dog</a></li>
+					<li><a href="pages/services/shop/foodAndHealth/cat.html">Food &amp; Health Cat</a></li>
+					<li><a href="pages/services/shop/foodAndHealth/smallPets.html">Food &amp; Health Small Pet</a></li>
+					<li><a href="pages/services/shop/suppliesAndTraining/dog.html">Supplies &amp; Training Dog</a></li>
+					<li><a href="pages/services/shop/suppliesAndTraining/cat.html">Supplies &amp; Training Cat</a></li>
+					<li><a href="pages/services/shop/suppliesAndTraining/smallPets.html">Supplies &amp; Training Small Pet</a></li>
+				</ul>
+ 			</nav>
+ 		</div>
+
+		<div class="links2">
+ 			<nav>
+ 				<ul>
+					<li><a href="pages/faqs.html">FAQ's</a></li>
+					<li><a href="pages/services/groomingSalon.html">Grooming Salon</a></li>
+					<li><a href="pages/services/training.html">Training</a></li>
+				</ul>
+ 			</nav>
+ 		</div>
+ 		<p class="rights"><span class="fa fa-copyright" aria-hidden="true" style="font-family:'FontAwesome',open-sans, sans-serif;">2016 Emily's Pet Shop. All rights reserved.</span></p>
+	</footer>
+</body>
+</html>
